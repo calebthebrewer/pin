@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="Pin">
+<head>
+	<meta charset="UTF-8">
+	<title>Pin</title>
+	<link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		html, body, .full {
+			height: 100%;
+			margin: 0;
+		}
+		.angular-google-map {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<header class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<nav>
+					<ul class="nav navbar-nav">
+						<a href="#" role="button" class="navbar-brand">Pin</a>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<div class="full" ng-view></div>
+	<script src="http://maps.googleapis.com/maps/api/js?sensor=false&language=en"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js"></script>
+	<script src="angular-google-maps.js"></script>
+	<script src="vendor/underscore/underscore.js"></script>
+	<script src="vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="pin.js"></script>
+</body>
+</html>

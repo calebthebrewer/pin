@@ -1,0 +1,20 @@
+<div class="modal-header">
+	<h3>Set Expiration</h3>
+</div>
+<div class="modal-body">
+	<form name="expForm">
+		<div class="form-group">
+			<label for="expiration">How long are you staying here?</label>
+			<input type="text" class="form-control" id="expiration" placeholder="(minutes)" ng-model="expiration">
+		</div>
+	</form>
+</div>
+<div class="modal-footer">
+	<button class="btn" ng-click="close()">
+		Cancel
+	</button>
+	<button class="btn btn-primary" type="submit" ng-click="drop()" for="expForm">
+		Drop Pin
+	</button>
+</div>	
+
