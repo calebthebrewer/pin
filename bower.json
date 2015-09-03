@@ -11,9 +11,13 @@
   "devDependencies": {
     "angular": "~1.2.1",
     "angular-route": "~1.2.1",
-    "underscore": null,
-    "angular-bootstrap": null,
     "angular-google-maps": "~1.0.10",
     "bootstrap": null
+  },
+  "dependencies": {
+    "angular-bootstrap": "~0.13.4",
+    "angular-route": "~1.4.5",
+    "bootstrap": "*",
+    "underscore": "~1.8.3"
   }
 }

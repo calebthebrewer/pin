@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("Pin", ["ui.bootstrap", "google-maps"]).
+angular.module("Pin", ["ui.bootstrap", "google-maps", "ngRoute"]).
 config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/', {templateUrl: 'partials/splash.html'});
 	$routeProvider.when('/pin', {templateUrl: 'partials/map.html', controller: 'DropPin'});
